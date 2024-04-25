@@ -1,0 +1,169 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    background-image: url(./ht.PNG);
+    height: 100vh;
+    background-position: center;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.card{
+    width: 560px;
+    height: 130px;
+    background-color: #1E293B;
+    border-radius: 10px;
+    padding: 45px 25px;
+    transition: 0.3s ;
+}
+
+.filest{
+    height: 600px !important;
+}
+
+h1{
+    text-align: center;
+    margin-top: 20px;
+    color: white;
+}
+
+input{
+    max-width: 365px;
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    background: none;
+    outline: none;
+    padding: 10px;
+    border: 1px solid #62676F;
+    color: white;
+}
+
+.card__top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.btn{
+    width: 120px;
+    height: 40px;
+    border-radius:5px;
+    background-color:#FFB92A;
+    color: black;
+    border: none;
+    font-weight: bold;
+}
+
+.card__description{
+    margin-top: 18px;
+}
+
+
+img, .card__img{
+    width: 165px;
+    height: 245px;
+    transition: 0.3s;
+}
+
+.card__description{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.card__description_right{
+    max-width: 320px;
+    width: 100%;
+}
+
+.card__description_right h2{
+    padding-top: 8px;
+    color: white;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+.rayting{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto ;
+    gap: 10px;
+}
+
+.rayting i{
+    color: #FFB92A;
+}
+
+.rayting p{
+    font-size: 18px;
+    color: white;
+    font-weight: 400;
+}
+
+.year{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin:0 auto ;
+    gap: 15px;
+    color: #62676F;
+}
+
+.genres{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin:8px auto ;
+    gap: 30px;
+    transition: 0.3s;
+}
+
+.janr{
+    color: #DCD8D4;
+    border: 1px solid #62676F;
+    border-radius: 4px;
+    padding: 5px 15px;
+    font-size: 14px;
+}
+
+.card__tittle h3{
+    margin-top: 23px;
+    color: white;
+    font-weight: 400;
+}
+
+.card__tittle p{
+    line-height: 27px;
+    margin-top: 5px;
+    color: #62676F;
+}
+
+@media screen and (max-width:450px) {
+    img{
+        width: 135px;
+        height: 220px;
+    }
+
+    .card{
+        padding: 15px;
+    }
+
+    .genres{
+        gap: 15px;
+    }
+
+    .card__tittle h3{
+        margin-top: 10px;
+    }
+}
